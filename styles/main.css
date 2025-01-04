@@ -1,0 +1,43 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.logo-strip-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 100px,
+        black calc(100% - 100px),
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 100px,
+        black calc(100% - 100px),
+        transparent
+    );
+}
+
+.logo-strip {
+    position: relative;
+    display: flex;
+}
+
+.logo-set {
+    display: flex;
+    flex-shrink: 0;
+}
+
+/* Remove .strip-logo styles as they'll be controlled in Webflow */

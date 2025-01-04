@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strip Animation</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- GSAP library required for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Main container for the logo strip -->
+    <div class="logo-strip-container">
+        <!-- Logo strip that will be animated -->
+        <div class="logo-strip">
+            <!-- Original logo set that will be cloned -->
+            <div class="logo-set">
+                <!-- Individual logos - Add/remove as needed -->
+                <img class="strip-logo" src="images/ibm.svg" alt="Logo 1">
+                <img class="strip-logo" src="images/cornell.svg" alt="Logo 2">
+                <img class="strip-logo" src="images/scale.svg" alt="Logo 3">
+                <img class="strip-logo" src="images/spacex.svg" alt="Logo 4">
+            </div>
+        </div>
+    </div>
+    <!-- Main script file -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
