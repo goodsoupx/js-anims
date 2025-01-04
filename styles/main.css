@@ -33,6 +33,8 @@ body {
 .logo-strip {
     position: relative;
     display: flex;
+    will-change: transform;
+    transform: translateX(0);
 }
 
 .logo-set {
@@ -40,4 +42,7 @@ body {
     flex-shrink: 0;
 }
 
-/* Remove .strip-logo styles as they'll be controlled in Webflow */
+.strip-logo {
+    width: auto;
+    height: 60px;
+}
